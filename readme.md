@@ -1,0 +1,5 @@
+
+    Accessibility – by using semantic markup, you can make sure that your content is accessible to everyone, including people with disabilities who use screen readers and other assistive technologies to navigate the web. Semantic markup helps these technologies to understand the content and present it in a meaningful way.
+    Search Engine Optimization (SEO) – search engines use semantic markup to understand the content of a web page and rank it accordingly. By using semantic markup, you can make sure that your content is properly indexed and easily discoverable by search engines.
+    Maintainability – semantic markup helps to create cleaner, more organized code that is easier to read and maintain. By using descriptive tags, you can make your code more self-explanatory, which makes it easier for other developers to understand and update.
+    Future-proofing – semantic markup is designed to be forward-compatible, which means that it will continue to be relevant and useful as new technologies and standards emerge. By using semantic markup, you can ensure that your code will continue to be relevant and functional for years to come.

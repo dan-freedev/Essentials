@@ -98,68 +98,93 @@ Both the <kbd> and <samp> tags are useful for indicating specific types of conte
     </table>
     <!-- srcset for specify a list of image files with different resolutions, sizes, and formats -->
     <!-- sizes for how much screen space the image will occupy on different devices -->
-     <!-- By using srcset and sizes together, you can create images that are optimized for different devices and screen sizes -->
-     <h1>Module 3</h1>
-     <h2>Hyperlinks</h2>
-     <p>
-         <a href="https://example.com">Visit Example.com</a>
-     </p>
-     <p>
-         <a href="https://www.example.com" target="_blank">Visit Example Website</a>
-     </p>
-     <p>
-         <!-- for an email link -->
-         <a href="mailto:info@example.com">Email Us</a>
-     </p>
-     <p>
-         <!-- for a telephone link-->
-         <a href="tel:123-456-7890">Call us at 123-456-7890</a>
-     </p>
-     <p>
-         <!-- for a download link -->
-         <a href="https://example.com/document.pdf" download="my-document.pdf">Download my document</a>
-     </p>
-     <p>
-         <!-- for relationship link between the current document and the target -->
-         <a href="https://example.com/stylesheet.css" rel="stylesheet">Link to stylesheet</a>
-     </p>
-     <p>
-         <!-- provides additional informaition -->
-         <p>Go to <a href="https://example.com/about" title="Visit our About section.">our website</a> for more information.</p>
-     </p>
-     <p>
-         <!-- for clickable img link -->
-         <a href="https://www.example.com">
-             <img src="/uploads/media/default/0001/03/mountain_landscape.jpg" alt="Mountain landscape" width="340" height="250">
-         </a>
-     </p>
-     <h2>Video and Audio Elements</h2>
-     <p>
-         <video src="myvideo.mp4" controls autoplay>
-             Your browser does not support the video tag.
-          </video>
-     </p>
-     <p>
-         <!-- Video Example -->
- <video controls>
-     <source src="myvideo.mp4" type="video/mp4">
-     <source src="myvideo.webm" type="video/webm">
-     <p>Your browser does not support the video tag.</p>
-  </video>
-  
-  <!-- Audio Example -->
-  <audio controls>
-     <source src="myaudiofile.mp3" type="audio/mp3">
-     <source src="myaudiofile.ogg" type="audio/ogg">
-     <p>Your browser does not support the audio tag.</p>
-  </audio>
-     </p>
-     <p>
-         <video poster="web-dev-picture.jpg" controls>
-             <source src="web-dev-video.mp4" type="video/mp4" media="(max-width: 600px)">
-             <source src="web-dev-video.webm" type="video/webm">
-           </video>
-     </p>
-    </body>
+    <!-- By using srcset and sizes together, you can create images that are optimized for different devices and screen sizes -->
+    <h1>Module 3</h1>
+    <h2>Hyperlinks</h2>
+    <p>
+        <a href="https://example.com">Visit Example.com</a>
+    </p>
+    <p>
+        <a href="https://www.example.com" target="_blank">Visit Example Website</a>
+    </p>
+    <p>
+        <!-- for an email link -->
+        <a href="mailto:info@example.com">Email Us</a>
+    </p>
+    <p>
+        <!-- for a telephone link-->
+        <a href="tel:123-456-7890">Call us at 123-456-7890</a>
+    </p>
+    <p>
+        <!-- for a download link -->
+        <a href="https://example.com/document.pdf" download="my-document.pdf">Download my document</a>
+    </p>
+    <p>
+        <!-- for relationship link between the current document and the target -->
+        <a href="https://example.com/stylesheet.css" rel="stylesheet">Link to stylesheet</a>
+    </p>
+    <p>
+        <!-- provides additional informaition -->
+    <p>Go to <a href="https://example.com/about" title="Visit our About section.">our website</a> for more information.
+    </p>
+    </p>
+    <p>
+        <!-- for clickable img link -->
+        <a href="https://www.example.com">
+            <img src="/uploads/media/default/0001/03/mountain_landscape.jpg" alt="Mountain landscape" width="340"
+                height="250">
+        </a>
+    </p>
+    <h2>Video and Audio Elements</h2>
+    <p>
+        <video src="myvideo.mp4" controls autoplay>
+            Your browser does not support the video tag.
+        </video>
+    </p>
+    <p>
+        <!-- Video Example -->
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+            <source src="myvideo.webm" type="video/webm">
+            <p>Your browser does not support the video tag.</p>
+        </video>
+
+        <!-- Audio Example -->
+        <audio controls>
+            <source src="myaudiofile.mp3" type="audio/mp3">
+            <source src="myaudiofile.ogg" type="audio/ogg">
+            <p>Your browser does not support the audio tag.</p>
+        </audio>
+    </p>
+    <p>
+        <video poster="web-dev-picture.jpg" controls>
+            <source src="web-dev-video.mp4" type="video/mp4" media="(max-width: 600px)">
+            <source src="web-dev-video.webm" type="video/webm">
+        </video>
+    </p>
+    <!-- hCard example -->
+    <div class="vcard">
+        <p class="fn">John Smith</p>
+        <p class="title">Web Developer</p>
+        <p class="org">Smith Web Solutions</p>
+        <p class="tel">555-555-5555</p>
+        <a class="email" href="mailto:john@smithwebsolutions.com">john@smithwebsolutions.com</a>
+        <p class="adr">
+            <span class="street-address">123 Main St.</span><br>
+            <span class="locality">Anytown</span>, <span class="region">CA</span> <span class="postal-code">12345</span>
+        </p>
+    </div>
+    <!-- Here's an example of using microdata to add schema.org structured data to a web page: -->
+    <div itemscope itemtype="http://schema.org/Person">
+        <h2 itemprop="name">John Smith</h2>
+        <p itemprop="jobTitle">Web Developer</p>
+        <p>
+            Contact me at:
+            <a href="mailto:john@smithwebsolutions.com" itemprop="email">john@smithwebsolutions.com
+            </a>
+        </p>
+    </div>
+
+</body>
 
 </html>
