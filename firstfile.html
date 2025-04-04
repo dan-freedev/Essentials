@@ -105,7 +105,7 @@ Both the <kbd> and <samp> tags are useful for indicating specific types of conte
         <a href="https://example.com">Visit Example.com</a>
     </p>
     <p>
-        <a href="https://www.example.com" target="_blank">Visit Example Website</a>
+        <a href="https://www.example.com" target="blank">Visit Example Website</a>
     </p>
     <p>
         <!-- for an email link -->
@@ -183,8 +183,40 @@ Both the <kbd> and <samp> tags are useful for indicating specific types of conte
             <a href="mailto:john@smithwebsolutions.com" itemprop="email">john@smithwebsolutions.com
             </a>
         </p>
+        <!--  -->
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16 32x32">
+        <!--  -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" width="560" height="315" frameborder="0"
+            allowfullscreen></iframe>
+        <h2>Choose the door game</h2>
+        <p>Open the door to see what's waiting for you behind it.</p>
+        <img src="https://edube.org/uploads/media/default/0001/03/choose-the-door.jpg" alt="A picture with two doors"
+            usemap="#two-doors">
+        <map name="two-doors">
+            <area shape="rect" title="A door with a white knob" coords="80,80,275,450"
+                href="https://example.com/option1" alt="Open the door to Option 1">
+            <area shape="rect" title="A door with a black knob" coords="540,75,745,460"
+                href="https://example.com/option2" alt="Open the door to Option 2">
+        </map>
+        <audio controls>
+            <source src="/uploads/media/default/0001/04/your-audio-file.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     </div>
+    <div>
+        <canvas id="myCanvas" width="300" height="200"></canvas>
 
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "black";
+            ctx.fillRect(10, 10, 200, 100);
+        </script>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="black" />
+          </svg>
+    </div>
 </body>
 
 </html>

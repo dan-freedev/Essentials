@@ -1,0 +1,65 @@
+/* CSS: Presentation, style, formatting */
+/* base styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* header styles */
+header {
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* section styles */
+section {
+  margin: 20px;
+}
+
+/* footer styles */
+footer {
+  background-color: #333333;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+}
+/* class selector */
+.highlight {
+  background-color: orange;
+  padding: 4px;
+  color: white;
+}
+/* ID selector */
+#header {
+  border-bottom: 2px solid orange;
+}
+/* attribut selector */
+a[href^="mailto:"]{
+  color: orange;
+}
+/* pseudo-class selector */
+a:hover{
+  color: white;
+}
+/* pseudo-element selector */
+p::first-line{
+  font-weight: bold;
+}
+/* combinat selector */
+header + main{
+  border-top: 1px solid gray;
+}
+/* overridden by inline styles */
+h1 {
+  color: green !important;
+}
+p{
+  color: red;
+}
+#header h1{
+color: orange !important;
+}
