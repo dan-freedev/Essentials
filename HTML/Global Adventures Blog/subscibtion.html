@@ -1,0 +1,68 @@
+<!-- The form is straightforward, inviting users to connect by providing essential fields for their name, email, subject, and a text area for their message. The *required* attribute ensures that the form cannot be submitted without filling out these crucial fields, thus improving form quality and engagement. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icon/favicon.png" title="img/x-icon" sizes="16x16 32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Newsletter Subscription - Global Adventure Blog</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city-name.html">Cities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subscibtion.html">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>Stay Updated with Our Adventures!</h1>
+        <p>Subscribe to our newsletter and never miss a story from the road.</p>
+
+
+        <form action="/subscribe" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+            <div>
+                <input type="checkbox" name="consent" id="consent" required>
+                <label for="consent">I agree to receive email updates and promotions.</label>
+
+            </div>
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </section>
+
+    <footer>
+
+        <nav>
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/privacy-policy-use.html">Privacy Policy</a></li>
+                <li><a href="/terms-of-use.html">Terms od Use</a></li>
+            </ul>
+        </nav>
+    
+        <div class="social-media">
+            <a href="#" target="_blank" rel="noopener">Faceblock</a>
+            <a href="#" target="_blank" rel="noopener">Tweety</a>
+            <a href="#" target="_blank" rel="noopener">Instadrama</a>
+        </div>
+    
+        <div class="contact-info">
+            <p>Contact us at: <a href="mailto:contact@globaladventuresblog.com">contact@example-globaladventuresblog.com</a>
+            </p>
+        </div>
+        <div class="copyright">
+            <p>© 2035 Global Adventures Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
