@@ -1,0 +1,13 @@
+.page-container{
+border: solid;
+}
+.header{
+text-align: center;
+}
+.main-content{
+    text-align: left;
+background-color: aqua;
+}
+.footer{
+text-align: center;
+}
